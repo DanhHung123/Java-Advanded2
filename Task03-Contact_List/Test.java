@@ -48,12 +48,9 @@ public class Test {
                                 System.out.println("Doi tuong ban muon thay doi la :" + c.toString());
                                 System.out.println("Ten thay doi : ");
                                 String nameUpdate = scan.next();
-                                c.setName(nameUpdate);
                                 System.out.println("SDT thay doi :");
                                 String phoneUpdate = scan.next();
-                                c.setPhone(phoneUpdate);
-                                System.out.println("Doi tuong sau khi thay doi :");
-                                System.out.println(c.toString());
+                                contactList.updateContact(c,new Contact(nameUpdate,phoneUpdate));
                                 break;
                             }
                         }
