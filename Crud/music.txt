@@ -1,0 +1,19 @@
+create database musicdata;
+Use musicdata;
+create table music(
+  id int primary key ,
+  name char(100),
+  author char(50),
+  years int
+);
+
+INSERT INTO `music`(`id`, `name`, `author`, `years`) VALUES (1,'Le roi','Quang Dung',1999);
+INSERT INTO `music`(`id`, `name`, `author`, `years`) VALUES (2,'Buong tay nhau ra','Son tung',2017);
+INSERT INTO `music`(`id`, `name`, `author`, `years`) VALUES (3,'Big city boy','Binz',2021);
+INSERT INTO `music`(`id`, `name`, `author`, `years`) VALUES (4,'Huong duong','changg',2022);
+INSERT INTO `music`(`id`, `name`, `author`, `years`) VALUES (5,'Mot dem say','Thinh suy',2019);
+INSERT INTO `music`(`id`, `name`, `author`, `years`) VALUES (6,'See you again','charlie puth', 2015);
+INSERT INTO `music`(`id`, `name`, `author`, `years`) VALUES (7,'Phai dau cuoc tinh','unknwo',2010);
+INSERT INTO `music`(`id`, `name`, `author`, `years`) VALUES (8,'Fashion tan gai','Low G wren even',2021);
+INSERT INTO `music`(`id`, `name`, `author`, `years`) VALUES (9,'Vuong','Ngo',2019);
+INSERT INTO `music`(`id`, `name`, `author`, `years`) VALUES (10,'3107-3','W/N Duong Nau',2021);
