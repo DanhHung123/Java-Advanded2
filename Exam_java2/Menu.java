@@ -10,11 +10,11 @@ public class Menu {
         Scanner scan = new Scanner(System.in);
         List<Student> studentList = new ArrayList<>();
         Tools tool = new Tools(studentList);
-        studentList.add(new Student(1,"hoang","hanoi","0987654"));
-        studentList.add(new Student(2,"hoang","hanoi","0987654"));
-        studentList.add(new Student(3,"hoang","hanoi","0987654"));
-        studentList.add(new Student(4,"hoang","hanoi","0987654"));
-        studentList.add(new Student(5,"hoang","hanoi","0987654"));
+        studentList.add(new Student(1,"Tran Van Hoang","Ha Noi","0987654"));
+        studentList.add(new Student(2,"Nguyen Dinh Nhien","Bac Ninh","0987654"));
+        studentList.add(new Student(3,"Le Thi Ngoc","Tay Nguyen","0987654"));
+        studentList.add(new Student(4,"Vuong Van Cong","Ha Noi","0987654"));
+        studentList.add(new Student(5,"Nguyen Hoang Long","Hai Phong","0987654"));
         try (
                 Connection conn = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/Student", "root","");
