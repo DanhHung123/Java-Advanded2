@@ -21,7 +21,7 @@ public class Menu {
                 Statement stmt = conn.createStatement();
                 PreparedStatement pstmt = conn.prepareStatement("Insert into Students values (?,?,?,?)");
         ){
-            conn.setAutoCommit(false);
+            conn.setAutoCommit(false); // Ngăn chặn commit
             boolean check = true;
             do {
                 System.out.println("===== Menu =====");
