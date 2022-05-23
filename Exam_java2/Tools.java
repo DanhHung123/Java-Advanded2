@@ -72,12 +72,15 @@ public class Tools {
         }
     }
     public void Save(PreparedStatement pstmt) throws Exception{
+        int count = 0;
         for (Student s : StudentList) {
             pstmt.setInt(1, s.getStudentId());
             pstmt.setString(2, s.getStudentName());
             pstmt.setString(3, s.getAddress());
             pstmt.setString(4, s.getPhone());
             pstmt.executeUpdate();
+            count++;
         }
+        System.out.println( count + " Record inserted");
     }
 }
